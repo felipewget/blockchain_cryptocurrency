@@ -5,4 +5,4 @@ It's a v1.0 of my descentralized cryptocurrency
 - Mineration
 - BlockChain
 
-![Screenshot](image_postman.png)
+![Screenshot](image_postman.PNG)
