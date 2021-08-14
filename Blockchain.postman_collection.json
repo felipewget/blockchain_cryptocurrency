@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "a42c3e13-0f86-400e-ba3a-e8661837a3eb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1_Blockchain",
+			"item": [
+				{
+					"name": "Mine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/block/mine",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"block",
+								"mine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/block",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"block"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "2_Cryptocurrence",
+			"item": [
+				{
+					"name": "Mineração e Transação",
+					"item": [
+						{
+							"name": "Add Transaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Minerar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/block/mine",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"block",
+										"mine"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get Chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Add Nodes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Replace Node",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://localhost:5555"
+		}
+	]
+}
